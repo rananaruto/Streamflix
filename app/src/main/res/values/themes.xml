@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme - Liquid Glass Design -->
+    <style name="Theme.StreamFlix" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        
+        <!-- Enable edge-to-edge -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        
+        <!-- Card styling -->
+        <item name="materialCardViewStyle">@style/Widget.StreamFlix.Card</item>
+        
+        <!-- Bottom navigation -->
+        <item name="bottomNavigationStyle">@style/Widget.StreamFlix.BottomNavigation</item>
+        
+        <!-- Ripple effect -->
+        <item name="android:colorControlHighlight">@color/ripple</item>
+        
+        <!-- Animation -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
+    </style>
+
+    <!-- Light Theme -->
+    <style name="Theme.StreamFlix.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryDark">@color/primary_light_dark</item>
+        <item name="colorAccent">@color/accent_light</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="materialCardViewStyle">@style/Widget.StreamFlix.Card.Light</item>
+    </style>
+
+    <!-- Fullscreen Theme for Player -->
+    <style name="Theme.StreamFlix.Fullscreen" parent="Theme.StreamFlix">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.StreamFlix.Splash" parent="Theme.StreamFlix">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/background</item>
+    </style>
+
+    <!-- ==================== Custom Widget Styles ==================== -->
+
+    <!-- Liquid Glass Card -->
+    <style name="Widget.StreamFlix.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/glass_surface</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="rippleColor">@color/ripple</item>
+    </style>
+
+    <style name="Widget.StreamFlix.Card.Light" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/glass_surface_light</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Glass Container -->
+    <style name="Widget.StreamFlix.GlassContainer">
+        <item name="android:background">@drawable/glass_background</item>
+    </style>
+
+    <!-- Bottom Navigation -->
+    <style name="Widget.StreamFlix.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/glass_nav_background</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="itemRippleColor">@color/ripple</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Text Appearances -->
+    <style name="TextAppearance.StreamFlix.Headline" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.StreamFlix.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.StreamFlix.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.StreamFlix.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_tertiary</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.StreamFlix.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.StreamFlix.Button.Glass" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/glass_button_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Input Fields -->
+    <style name="Widget.StreamFlix.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/glass_surface</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Window Animations -->
+    <style name="WindowAnimation" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- Popup Animation -->
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

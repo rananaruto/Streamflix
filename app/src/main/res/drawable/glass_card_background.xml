@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main glass surface -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#262640CC"
+                android:centerColor="#1E1E3ACC"
+                android:endColor="#16162ACC" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Top highlight -->
+    <item android:top="0dp" android:left="0dp" android:right="0dp" android:height="40%">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFFFFF12"
+                android:endColor="#00000000" />
+            <corners
+                android:topLeftRadius="16dp"
+                android:topRightRadius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Bottom shadow -->
+    <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:height="30%">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#00000020"
+                android:endColor="#00000000" />
+            <corners
+                android:bottomLeftRadius="16dp"
+                android:bottomRightRadius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Border stroke -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="#FFFFFF1A" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>

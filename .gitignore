@@ -1,0 +1,9 @@
+*.log
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.gradle
+build
+.gradle.kts

@@ -1,0 +1,12 @@
+{
+  "id": "sample.movies.extension",
+  "name": "Sample Movies Extension",
+  "version": "1.0.0",
+  "author": "StreamFlix Team",
+  "description": "A sample extension demonstrating web scraping capabilities for educational purposes.",
+  "language": "en",
+  "icon": "https://example.com/icon.png",
+  "categories": ["Movies", "TV Shows", "Trending"],
+  "baseUrl": "https://example-streaming-site.com",
+  "apiVersion": 1
+}

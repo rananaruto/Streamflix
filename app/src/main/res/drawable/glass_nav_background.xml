@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Blur-like gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#0F0F1AF0"
+                android:centerColor="#16162AE6"
+                android:endColor="#1A1A2ECC" />
+            <corners
+                android:topLeftRadius="24dp"
+                android:topRightRadius="24dp" />
+        </shape>
+    </item>
+    
+    <!-- Top edge highlight -->
+    <item android:top="0dp" android:left="0dp" android:right="0dp" android:height="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF15" />
+        </shape>
+    </item>
+    
+    <!-- Inner glow -->
+    <item android:top="1dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#FFFFFF08"
+                android:endColor="#00000000" />
+            <corners
+                android:topLeftRadius="24dp"
+                android:topRightRadius="24dp" />
+        </shape>
+    </item>
+</layer-list>

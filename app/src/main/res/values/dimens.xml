@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    
+    <!-- Card dimensions -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_corner_radius_small">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- Poster dimensions -->
+    <dimen name="poster_width">120dp</dimen>
+    <dimen name="poster_height">180dp</dimen>
+    <dimen name="poster_width_large">160dp</dimen>
+    <dimen name="poster_height_large">240dp</dimen>
+    <dimen name="poster_width_small">80dp</dimen>
+    <dimen name="poster_height_small">120dp</dimen>
+    <dimen name="poster_corner_radius">12dp</dimen>
+    
+    <!-- Grid spacing -->
+    <dimen name="grid_spacing">12dp</dimen>
+    <dimen name="grid_spacing_small">8dp</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_xs">12sp</dimen>
+    <dimen name="text_size_sm">14sp</dimen>
+    <dimen name="text_size_md">16sp</dimen>
+    <dimen name="text_size_lg">20sp</dimen>
+    <dimen name="text_size_xl">24sp</dimen>
+    <dimen name="text_size_xxl">32sp</dimen>
+    <dimen name="text_size_hero">48sp</dimen>
+    
+    <!-- Button dimensions -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_small">36dp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    
+    <!-- Input field dimensions -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_corner_radius">12dp</dimen>
+    <dimen name="input_padding_horizontal">16dp</dimen>
+    
+    <!-- Bottom navigation -->
+    <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+    <dimen name="bottom_nav_margin">16dp</dimen>
+    
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="toolbar_padding">16dp</dimen>
+    
+    <!-- Status bar -->
+    <dimen name="status_bar_height">24dp</dimen>
+    
+    <!-- Glass effect -->
+    <dimen name="glass_blur_radius">20dp</dimen>
+    <dimen name="glass_border_width">1dp</dimen>
+    
+    <!-- Animation -->
+    <dimen name="animation_duration_short">150</dimen>
+    <dimen name="animation_duration_medium">300</dimen>
+    <dimen name="animation_duration_long">500</dimen>
+    
+    <!-- Player controls -->
+    <dimen name="player_controls_height">64dp</dimen>
+    <dimen name="player_progress_height">4dp</dimen>
+    <dimen name="player_button_size">48dp</dimen>
+    
+    <!-- Shimmer -->
+    <dimen name="shimmer_corner_radius">8dp</dimen>
+</resources>

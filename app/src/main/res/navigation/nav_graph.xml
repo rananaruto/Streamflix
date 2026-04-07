@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.streamflix.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_home_to_player"
+            app:destination="@id/playerActivity" />
+            
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/settingsActivity" />
+    </fragment>
+
+    <!-- Categories Fragment -->
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.streamflix.ui.categories.CategoriesFragment"
+        android:label="@string/nav_categories"
+        tools:layout="@layout/fragment_categories">
+        
+        <action
+            android:id="@+id/action_categories_to_player"
+            app:destination="@id/playerActivity" />
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.streamflix.ui.search.SearchFragment"
+        android:label="@string/nav_search"
+        tools:layout="@layout/fragment_search">
+        
+        <action
+            android:id="@+id/action_search_to_player"
+            app:destination="@id/playerActivity" />
+    </fragment>
+
+    <!-- Favorites Fragment -->
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.streamflix.ui.favorites.FavoritesFragment"
+        android:label="@string/nav_favorites"
+        tools:layout="@layout/fragment_favorites">
+        
+        <action
+            android:id="@+id/action_favorites_to_player"
+            app:destination="@id/playerActivity" />
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.streamflix.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile">
+        
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/settingsActivity" />
+            
+        <action
+            android:id="@+id/action_profile_to_extensions"
+            app:destination="@id/extensionManagerActivity" />
+            
+        <action
+            android:id="@+id/action_profile_to_history"
+            app:destination="@id/historyFragment" />
+    </fragment>
+
+    <!-- History Fragment -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.streamflix.ui.history.HistoryFragment"
+        android:label="@string/watch_history"
+        tools:layout="@layout/fragment_history">
+        
+        <action
+            android:id="@+id/action_history_to_player"
+            app:destination="@id/playerActivity" />
+    </fragment>
+
+    <!-- Player Activity -->
+    <activity
+        android:id="@+id/playerActivity"
+        android:name="com.streamflix.ui.player.PlayerActivity"
+        android:label="Player"
+        tools:layout="@layout/activity_player">
+        
+        <argument
+            android:name="mediaItem"
+            app:argType="com.streamflix.data.model.MediaItem" />
+    </activity>
+
+    <!-- Settings Activity -->
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.streamflix.ui.settings.SettingsActivity"
+        android:label="@string/settings"
+        tools:layout="@layout/activity_settings" />
+
+    <!-- Extension Manager Activity -->
+    <activity
+        android:id="@+id/extensionManagerActivity"
+        android:name="com.streamflix.ui.extensions.ExtensionManagerActivity"
+        android:label="@string/extensions"
+        tools:layout="@layout/activity_extension_manager" />
+
+</navigation>

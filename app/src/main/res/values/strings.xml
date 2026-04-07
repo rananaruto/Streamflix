@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StreamFlix</string>
+    <string name="app_tagline">Your Ultimate Streaming Experience</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Home Screen -->
+    <string name="trending_now">Trending Now</string>
+    <string name="latest_movies">Latest Movies</string>
+    <string name="popular_series">Popular Series</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="your_favorites">Your Favorites</string>
+    <string name="recommended">Recommended For You</string>
+    <string name="new_releases">New Releases</string>
+    <string name="top_rated">Top Rated</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Search movies, series, anime…</string>
+    <string name="search_history">Search History</string>
+    <string name="clear_history">Clear History</string>
+    <string name="no_results">No results found</string>
+    <string name="try_different">Try different keywords</string>
+    <string name="trending_searches">Trending Searches</string>
+    
+    <!-- Categories -->
+    <string name="movies">Movies</string>
+    <string name="tv_series">TV Series</string>
+    <string name="anime">Anime</string>
+    <string name="documentaries">Documentaries</string>
+    <string name="action">Action</string>
+    <string name="comedy">Comedy</string>
+    <string name="drama">Drama</string>
+    <string name="horror">Horror</string>
+    <string name="sci_fi">Sci-Fi</string>
+    <string name="romance">Romance</string>
+    <string name="thriller">Thriller</string>
+    
+    <!-- Player -->
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="rewind">Rewind</string>
+    <string name="fast_forward">Fast Forward</string>
+    <string name="next_episode">Next Episode</string>
+    <string name="previous_episode">Previous Episode</string>
+    <string name="quality">Quality</string>
+    <string name="subtitles">Subtitles</string>
+    <string name="audio">Audio</string>
+    <string name="playback_speed">Playback Speed</string>
+    <string name="picture_in_picture">Picture in Picture</string>
+    <string name="cast">Cast</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="exit_fullscreen">Exit Fullscreen</string>
+    
+    <!-- Favorites -->
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="no_favorites">No favorites yet</string>
+    <string name="no_favorites_desc">Tap the heart icon on any movie to add it here</string>
+    
+    <!-- History -->
+    <string name="watch_history">Watch History</string>
+    <string name="clear_history_confirm">Clear all watch history?</string>
+    <string name="no_history">No watch history</string>
+    <string name="no_history_desc">Start watching to see your history here</string>
+    <string name="watch_time">Watch Time</string>
+    <string name="total_watch_time">Total Watch Time</string>
+    
+    <!-- Extensions -->
+    <string name="extensions">Extensions</string>
+    <string name="install_extension">Install Extension</string>
+    <string name="extension_github">From GitHub</string>
+    <string name="extension_local">From Local File</string>
+    <string name="extension_url_hint">GitHub repository URL</string>
+    <string name="extension_installed">Extension installed successfully</string>
+    <string name="extension_install_failed">Failed to install extension</string>
+    <string name="extension_uninstall">Uninstall</string>
+    <string name="extension_enable">Enable</string>
+    <string name="extension_disable">Disable</string>
+    <string name="no_extensions">No extensions installed</string>
+    <string name="add_extensions_desc">Install extensions to start streaming</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="general">General</string>
+    <string name="appearance">Appearance</string>
+    <string name="playback">Playback</string>
+    <string name="theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System Default</string>
+    <string name="liquid_glass">Liquid Glass Effect</string>
+    <string name="liquid_glass_desc">Enable frosted glass UI effects</string>
+    <string name="auto_play">Auto-play Next Episode</string>
+    <string name="auto_play_desc">Automatically play next episode</string>
+    <string name="default_quality">Default Video Quality</string>
+    <string name="subtitle_language">Default Subtitle Language</string>
+    <string name="download_quality">Download Quality</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy">Privacy</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="clear_data">Clear All Data</string>
+    <string name="clear_data_confirm">This will delete all favorites and history. Continue?</string>
+    
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="statistics">Statistics</string>
+    <string name="favorites_count">Favorites</string>
+    <string name="watched_count">Watched</string>
+    <string name="account">Account</string>
+    
+    <!-- Actions -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="check_connection">Please check your internet connection</string>
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="swipe_to_delete">Swipe to delete</string>
+    
+    <!-- Content Info -->
+    <string name="rating">Rating</string>
+    <string name="year">Year</string>
+    <string name="duration">Duration</string>
+    <string name="genre">Genre</string>
+    <string name="director">Director</string>
+    <string name="cast_members">Cast</string>
+    <string name="episodes">Episodes</string>
+    <string name="seasons">Seasons</string>
+    <string name="related_content">Related Content</string>
+    <string name="watch_now">Watch Now</string>
+    <string name="more_info">More Info</string>
+    <string name="share">Share</string>
+    
+    <!-- Time formats -->
+    <string name="minutes_short">%d min</string>
+    <string name="hours_minutes">%dh %dm</string>
+    <string name="season_episode">S%1$d E%2$d</string>
+</resources>
