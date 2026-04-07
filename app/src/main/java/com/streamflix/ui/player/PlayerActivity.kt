@@ -146,10 +146,47 @@ class PlayerActivity : AppCompatActivity() {
             binding.errorView.visibility = View.GONE
             exoPlayer?.prepare()
         }
-        
-        // Custom control buttons
-        binding.playerView.findViewById<ImageButton>(androidx.media3.ui.R.id.exo_back)?.setOnClickListener {
+
+        // Custom control buttons from layout
+        binding.playerView.findViewById<ImageButton>(R.id.exo_back)?.setOnClickListener {
             finish()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_settings)?.setOnClickListener {
+            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_cast)?.setOnClickListener {
+            Toast.makeText(this, "Cast", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_subtitle)?.setOnClickListener {
+            Toast.makeText(this, "Subtitles", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_quality)?.setOnClickListener {
+            Toast.makeText(this, "Quality", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_next)?.setOnClickListener {
+            Toast.makeText(this, "Next Episode", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_pip)?.setOnClickListener {
+            enterPipMode()
+        }
+
+        binding.playerView.findViewById<ImageButton>(R.id.btn_fullscreen)?.setOnClickListener {
+            toggleFullscreen()
+        }
+    }
+
+    private fun toggleFullscreen() {
+        isFullscreen = !isFullscreen
+        if (isFullscreen) {
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE
+        } else {
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT
         }
     }
 

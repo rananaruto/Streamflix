@@ -71,6 +71,11 @@
 
     <!-- ==================== Custom Widget Styles ==================== -->
 
+    <!-- Base Widget Style -->
+    <style name="Widget.StreamFlix" parent="android:Widget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
     <!-- Liquid Glass Card -->
     <style name="Widget.StreamFlix.Card" parent="Widget.Material3.CardView.Elevated">
         <item name="cardBackgroundColor">@color/glass_surface</item>
