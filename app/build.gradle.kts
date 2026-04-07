@@ -133,7 +133,9 @@ dependencies {
     
     // Image Loading - Coil
     implementation("io.coil-kt:coil:2.5.0")
-    implementation("io.coil-kt:coil-transformations:2.5.0")
+    implementation("io.coil-kt:coil-gif:2.5.0")
+    implementation("io.coil-kt:coil-svg:2.5.0")
+    implementation("io.coil-kt:coil-video:2.5.0")
     
     // JSON Parsing - Gson
     implementation("com.google.code.gson:gson:2.10.1")
