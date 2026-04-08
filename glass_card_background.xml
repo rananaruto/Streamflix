@@ -1,0 +1,8 @@
+<!-- Updated XML content to resolve height dimension errors -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="100dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
