@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout 
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/tv_cinematic_background"
     tools:context=".ui.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/tv_top_glow" />
 
     <!-- Main Content Container -->
     <androidx.fragment.app.FragmentContainerView
@@ -14,7 +19,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="88dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
@@ -22,18 +27,20 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="84dp"
         android:layout_gravity="bottom"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/glass_nav_background"
-        android:elevation="8dp"
+        android:elevation="10dp"
+        android:paddingHorizontal="6dp"
+        android:stateListAnimator="@animator/tv_focus_nav"
         app:itemActiveIndicatorStyle="@null"
-        app:itemIconSize="24dp"
+        app:itemIconSize="28dp"
         app:itemIconTint="@color/bottom_nav_color"
-        app:itemPaddingBottom="12dp"
-        app:itemPaddingTop="12dp"
+        app:itemPaddingBottom="14dp"
+        app:itemPaddingTop="14dp"
         app:itemRippleColor="@color/ripple"
         app:itemTextAppearanceActive="@style/TextAppearance.StreamFlix.Caption"
         app:itemTextAppearanceInactive="@style/TextAppearance.StreamFlix.Caption"

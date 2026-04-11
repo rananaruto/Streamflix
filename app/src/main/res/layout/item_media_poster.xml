@@ -5,22 +5,26 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:clipToPadding="false"
-    android:padding="4dp">
+    android:padding="8dp">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_poster"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
+        android:layout_width="138dp"
+        android:layout_height="206dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:stateListAnimator="@animator/tv_focus_card"
         app:cardBackgroundColor="@color/surface_variant"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:rippleColor="@color/ripple">
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:rippleColor="@color/ripple"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1dp">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- Poster Image -->
             <ImageView
                 android:id="@+id/iv_poster"
                 android:layout_width="match_parent"
@@ -29,57 +33,53 @@
                 android:scaleType="centerCrop"
                 tools:src="@drawable/shimmer_background" />
 
-            <!-- Gradient Overlay -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/poster_gradient_overlay" />
 
-            <!-- Rating Badge -->
             <LinearLayout
                 android:id="@+id/badge_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top_start"
-                android:layout_margin="8dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/glass_button_background"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="2dp">
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="3dp">
 
                 <ImageView
                     android:layout_width="12dp"
                     android:layout_height="12dp"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_star"
-                    app:tint="#F59E0B" />
+                    app:tint="@color/warning" />
 
                 <TextView
                     android:id="@+id/tv_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
+                    android:layout_marginStart="3dp"
                     android:textColor="@android:color/white"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     tools:text="8.5" />
             </LinearLayout>
 
-            <!-- Favorite Button -->
             <ImageButton
                 android:id="@+id/btn_favorite"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:layout_gravity="top_end"
-                android:layout_margin="4dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_margin="6dp"
+                android:background="@drawable/glass_button_background"
                 android:contentDescription="@string/add_to_favorites"
-                android:padding="4dp"
+                android:padding="6dp"
                 android:src="@drawable/ic_favorite_border"
                 app:tint="@android:color/white" />
 
-            <!-- Title -->
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="match_parent"
@@ -87,18 +87,17 @@
                 android:layout_gravity="bottom"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 tools:text="Movie Title" />
 
-            <!-- Progress Indicator -->
             <ProgressBar
                 android:id="@+id/progress_watch"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="4dp"
                 android:layout_gravity="bottom"
                 android:progressDrawable="@drawable/watch_progress"
                 android:visibility="gone"

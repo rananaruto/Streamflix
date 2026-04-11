@@ -5,16 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="16dp"
-    android:paddingBottom="8dp">
+    android:paddingTop="18dp"
+    android:paddingBottom="12dp">
 
-    <!-- Section Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
+        android:paddingHorizontal="20dp"
         android:paddingBottom="12dp">
 
         <TextView
@@ -24,27 +23,28 @@
             android:layout_weight="1"
             android:textAppearance="@style/TextAppearance.StreamFlix.Title"
             android:textColor="@color/text_primary"
+            android:textSize="22sp"
             tools:text="Trending Now" />
 
         <TextView
             android:id="@+id/btn_see_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:padding="8dp"
+            android:background="@drawable/glass_button_background"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp"
             android:text="See All"
             android:textAppearance="@style/TextAppearance.StreamFlix.Caption"
-            android:textColor="@color/primary" />
+            android:textColor="@color/accent" />
     </LinearLayout>
 
-    <!-- Horizontal RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_section_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
         android:orientation="horizontal"
-        android:paddingHorizontal="12dp"
+        android:paddingHorizontal="14dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_media_poster" />
 
