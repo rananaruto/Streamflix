@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ==================== Dark Theme Colors ==================== -->
-    
+
     <!-- Primary Colors -->
-    <color name="primary">#6366F1</color>
-    <color name="primary_dark">#4F46E5</color>
-    <color name="primary_light">#818CF8</color>
-    <color name="accent">#EC4899</color>
-    <color name="accent_light">#F472B6</color>
-    
+    <color name="primary">#7C4DFF</color>
+    <color name="primary_dark">#5B2EFF</color>
+    <color name="primary_light">#A57BFF</color>
+    <color name="accent">#00E5FF</color>
+    <color name="accent_light">#6AFAFF</color>
+
     <!-- Background Colors -->
-    <color name="background">#0F0F1A</color>
-    <color name="background_secondary">#1A1A2E</color>
-    <color name="surface">#16162A</color>
-    <color name="surface_variant">#1E1E3A</color>
-    
+    <color name="background">#06070F</color>
+    <color name="background_secondary">#0F1224</color>
+    <color name="surface">#12152B</color>
+    <color name="surface_variant">#1B2040</color>
+
     <!-- Glass Effect Colors (Semi-transparent) -->
-    <color name="glass_surface">#1A1A2ECC</color>
-    <color name="glass_surface_light">#262640CC</color>
-    <color name="glass_border">#FFFFFF1A</color>
-    <color name="glass_highlight">#FFFFFF0D</color>
-    <color name="glass_shadow">#0000004D</color>
-    
+    <color name="glass_surface">#1C2344D9</color>
+    <color name="glass_surface_light">#2A3460D9</color>
+    <color name="glass_border">#7BE2FF33</color>
+    <color name="glass_highlight">#B6C9FF24</color>
+    <color name="glass_shadow">#01020B80</color>
+
     <!-- Text Colors -->
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#B3B3CC</color>
-    <color name="text_tertiary">#808099</color>
-    <color name="text_disabled">#4D4D66</color>
-    
+    <color name="text_primary">#F9FAFF</color>
+    <color name="text_secondary">#C4CCE7</color>
+    <color name="text_tertiary">#8892B9</color>
+    <color name="text_disabled">#58607C</color>
+
     <!-- Status Colors -->
-    <color name="success">#22C55E</color>
-    <color name="warning">#F59E0B</color>
-    <color name="error">#EF4444</color>
-    <color name="info">#3B82F6</color>
-    
+    <color name="success">#33D17A</color>
+    <color name="warning">#FFB020</color>
+    <color name="error">#FF5470</color>
+    <color name="info">#4FC3FF</color>
+
     <!-- Rating Colors -->
-    <color name="rating_excellent">#22C55E</color>
-    <color name="rating_good">#84CC16</color>
-    <color name="rating_average">#F59E0B</color>
-    <color name="rating_poor">#EF4444</color>
-    
+    <color name="rating_excellent">#33D17A</color>
+    <color name="rating_good">#A3E635</color>
+    <color name="rating_average">#FFB020</color>
+    <color name="rating_poor">#FF5470</color>
+
     <!-- Gradient Colors -->
-    <color name="gradient_start">#6366F1</color>
-    <color name="gradient_end">#EC4899</color>
-    <color name="gradient_surface_start">#1A1A2E00</color>
-    <color name="gradient_surface_end">#0F0F1A</color>
-    
+    <color name="gradient_start">#7C4DFF</color>
+    <color name="gradient_end">#00E5FF</color>
+    <color name="gradient_surface_start">#111B4200</color>
+    <color name="gradient_surface_end">#06070F</color>
+
     <!-- Overlay Colors -->
-    <color name="overlay_light">#FFFFFF1A</color>
-    <color name="overlay_medium">#FFFFFF33</color>
-    <color name="overlay_dark">#00000066</color>
-    <color name="overlay_darker">#00000099</color>
-    
+    <color name="overlay_light">#F4F7FF1F</color>
+    <color name="overlay_medium">#D2DAFF3D</color>
+    <color name="overlay_dark">#04081699</color>
+    <color name="overlay_darker">#02040ACC</color>
+
     <!-- Ripple Effect -->
-    <color name="ripple">#FFFFFF1A</color>
-    
+    <color name="ripple">#7BE2FF33</color>
+
     <!-- Bottom Navigation -->
-    <color name="bottom_nav_selected">#6366F1</color>
-    <color name="bottom_nav_unselected">#808099</color>
-    
+    <color name="bottom_nav_selected">#E7EBFF</color>
+    <color name="bottom_nav_unselected">#8E98BF</color>
+
     <!-- ==================== Light Theme Colors ==================== -->
-    
+
     <!-- Primary Colors -->
-    <color name="primary_light_theme">#4F46E5</color>
-    <color name="primary_light_dark">#4338CA</color>
-    <color name="accent_light_theme">#DB2777</color>
-    
+    <color name="primary_light_theme">#5B2EFF</color>
+    <color name="primary_light_dark">#4420CA</color>
+    <color name="accent_light_theme">#008CA8</color>
+
     <!-- Background Colors -->
-    <color name="background_light">#F8FAFC</color>
-    <color name="background_secondary_light">#F1F5F9</color>
+    <color name="background_light">#F6F8FF</color>
+    <color name="background_secondary_light">#EDEFFF</color>
     <color name="surface_light">#FFFFFF</color>
-    <color name="surface_variant_light">#F1F5F9</color>
-    
+    <color name="surface_variant_light">#ECEFFE</color>
+
     <!-- Glass Effect Colors (Light) -->
-    <color name="glass_surface_light_theme">#FFFFFFCC</color>
-    <color name="glass_surface_light_light">#F8FAFCCC</color>
-    <color name="glass_border_light">#0000001A</color>
-    
+    <color name="glass_surface_light_theme">#FFFFFFD9</color>
+    <color name="glass_surface_light_light">#F6F8FFD9</color>
+    <color name="glass_border_light">#2F3A6A1F</color>
+
     <!-- Text Colors (Light) -->
-    <color name="text_primary_light">#0F172A</color>
-    <color name="text_secondary_light">#475569</color>
-    <color name="text_tertiary_light">#94A3B8</color>
-    
+    <color name="text_primary_light">#13172D</color>
+    <color name="text_secondary_light">#3D476E</color>
+    <color name="text_tertiary_light">#7884AE</color>
+
     <!-- ==================== Category Colors ==================== -->
-    <color name="category_movies">#6366F1</color>
-    <color name="category_series">#EC4899</color>
-    <color name="category_anime">#F59E0B</color>
-    <color name="category_documentary">#22C55E</color>
-    
+    <color name="category_movies">#7C4DFF</color>
+    <color name="category_series">#00E5FF</color>
+    <color name="category_anime">#FFB020</color>
+    <color name="category_documentary">#33D17A</color>
+
     <!-- ==================== Player Colors ==================== -->
-    <color name="player_controls_background">#CC000000</color>
-    <color name="player_progress_background">#4DFFFFFF</color>
-    <color name="player_progress_fill">#6366F1</color>
-    <color name="player_buffering">#FFFFFF80</color>
+    <color name="player_controls_background">#D905091A</color>
+    <color name="player_progress_background">#66DCE3FF</color>
+    <color name="player_progress_fill">#7C4DFF</color>
+    <color name="player_buffering">#CCF5FFFF</color>
 </resources>

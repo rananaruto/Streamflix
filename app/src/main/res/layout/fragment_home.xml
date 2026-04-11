@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout 
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/tv_top_glow" />
 
     <!-- App Bar with Toolbar -->
     <com.google.android.material.appbar.AppBarLayout
@@ -17,28 +22,33 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="76dp"
             android:background="@android:color/transparent"
+            android:paddingHorizontal="20dp"
             app:layout_scrollFlags="scroll|enterAlways">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"
+                android:shadowColor="#70000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="8"
                 android:text="@string/app_name"
                 android:textAppearance="@style/TextAppearance.StreamFlix.Headline"
                 android:textColor="@color/text_primary" />
 
             <ImageButton
                 android:id="@+id/btn_settings"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/glass_button_background"
                 android:contentDescription="@string/settings"
-                android:padding="12dp"
+                android:padding="14dp"
                 android:src="@drawable/ic_settings"
+                android:stateListAnimator="@animator/tv_focus_nav"
                 app:tint="@color/text_primary" />
 
         </androidx.appcompat.widget.Toolbar>
@@ -54,14 +64,16 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipToPadding="false"
             android:fillViewport="true"
-            android:overScrollMode="never">
+            android:overScrollMode="never"
+            android:paddingTop="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="100dp">
+                android:paddingBottom="110dp">
 
                 <!-- Continue Watching Section -->
                 <LinearLayout
@@ -75,8 +87,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="18dp"
                         android:layout_marginBottom="12dp"
                         android:text="@string/continue_watching"
                         android:textAppearance="@style/TextAppearance.StreamFlix.Title"
@@ -88,8 +100,8 @@
                         android:layout_height="wrap_content"
                         android:clipToPadding="false"
                         android:orientation="horizontal"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
                 </LinearLayout>
 
@@ -103,7 +115,6 @@
                     android:overScrollMode="never"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-                <!-- Loading State -->
                 <com.facebook.shimmer.ShimmerFrameLayout
                     android:id="@+id/shimmer_loading"
                     android:layout_width="match_parent"
@@ -116,7 +127,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <!-- Shimmer section 1 -->
                         <View
                             android:layout_width="150dp"
                             android:layout_height="24dp"
@@ -163,7 +173,7 @@
                     <ImageView
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:alpha="0.5"
+                        android:alpha="0.6"
                         android:contentDescription="@string/no_extensions"
                         android:src="@drawable/ic_extension" />
 
